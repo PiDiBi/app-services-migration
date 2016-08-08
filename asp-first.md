@@ -54,7 +54,7 @@ After creating the web app the next step is to create the Hybrid Connection. Thi
     - Click **OK**
   - Click **OK**
 
-Azure will now create the hybrid connection using BizTalk. Once this is completed you will need to install the necessary software on Windows.
+Azure will now create the hybrid connection. Once this is completed you will need to install the necessary software on Windows.
 
 #### Install and configure the hybrid connection listener
 
