@@ -4,10 +4,6 @@ When migrating an application to Azure App Services, there are three ways to acc
 
 This style of a migration allows you to continue to take advantage of the investment made in your data servers, while leveraging the power of Azure App Service. In addition, for scenarios where you will not be migrating the data store to the cloud, hybrid connections will allow you to still migrate the application into Azure.
 
-### Lab Setup
-
-Instructions to come
-
 ### Performing the migration
 
 The overall steps are as follows:
@@ -94,6 +90,7 @@ In this section, you will open the Expenses.Mvc application and explore the Web.
 1. Under **Expenses.Web**, open **Web.config**
 1. At line **13**, make a note of the connection string
   - The name of the **data source** is **migration**, which is the name of the local system, and the name you used when configuring the connection in Azure
+  - Note that the connection is using SQL Authentication. Windows Authentication is not supported using Hybrid Connections.
   - This connection string **does not** need to be updated after deployment
 
 In this section, you will test the application to confirm it runs locally. It has already been deployed to the local instance of IIS.
@@ -117,7 +114,10 @@ In this section, you will deploy the application to Azure. You will do this by f
 1. Choose **migrate-&lt;your name&gt;.PublishSettings** and click **Open**, then **OK**
 1. Click **Publish**, as no other changes need to be made
 
-Visual Studio will deploy your site, and then automatically open the site in Azure in Internet Explorer. Note the site displays the same data you saw earlier, as it is using your local instance of SQL Server.
+Visual Studio will deploy your site, and then automatically open the site in Azure in Internet Explorer. Note the site displays the same data you saw earlier, as it is using your local instance of SQL Server. If you want, you could change some of the data directly by using SQL Server Management Studio, refresh the page, and see the updates.
 
 ### Summary
 
+You have a lot of options available to you when migrating a website to Azure App Services. You can choose to migrate your application in stages, by either first uploading the database or, in our case, uploading the application. By using Hybrid Connections, you're able to access SQL Server locally, without having to update your application.
+
+What we saw in this exercise was how to create the web app in App Services, how to deploy our application, and then how to create and configure the Hybrid Connection.
