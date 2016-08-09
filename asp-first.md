@@ -95,7 +95,6 @@ In this section, you will open the Expenses.Mvc application and explore the Web.
 
 In this section, you will test the application to confirm it runs locally. It has already been deployed to the local instance of IIS.
 
-1. Open **Internet Explorer**
 1. Navigate to **http://localhost**
   - Note the existing data
   - This data is being pulled from the local instance of SQL Server
