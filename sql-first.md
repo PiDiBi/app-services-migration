@@ -1,6 +1,6 @@
 ## Migrate SQL Server with local ASP.NET site
 
-When migrating an application to Azure App Services, you have several options available to you for your migration plan. You can migrate the site first, keeping your database local. Or, you can migrate your database first, and then your application later. That is what this lab will examine.
+When migrating an application to Azure App Service, you have several options available to you for your migration plan. You can migrate the site first, keeping your database local. Or, you can migrate your database first, and then your application later. That is what this lab will examine.
 
 ### The Scenario
 
@@ -100,7 +100,7 @@ If you want more information about performing migrations, testing your databsae,
 
 #### Confirm the database was deployed.
 
-1. Click **Connect**, **Database Engine...*
+1. Click **Connect**, **Database Engine...**
 1. Configure the connection using the following information:
   - Server name: *expenses-<your-name>.database.windows.net
   - Authentication: *SQL Server Authentication*
