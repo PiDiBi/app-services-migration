@@ -82,7 +82,7 @@ Azure is now configured to communicate with your local VM, and your local VM is 
 
 #### Deploy web application
 
-One of the great advantages to using Hybrid Connections is the on-premises SQL Server will look as though its on the same network as the application. In many scenarios, no additional configure will be required to connect to SQL Server after deployment.
+One of the great advantages to using Hybrid Connections is the on-premises SQL Server will look as though it's on the same network as the application. In many scenarios, no additional configuration will be required to connect to SQL Server after deployment.
 
 In this section, you will open the Expenses.Mvc application and explore the Web.config. You won't make any changes in this section, simply confirm that the application works locally using the name of the server **migration**
 
