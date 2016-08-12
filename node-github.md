@@ -10,9 +10,17 @@ In addition, App Service, through Hybrid Connections, allows you to access local
 
 In this lab, you will take a Node.JS application deployed to GitHub and configure continuous deployment.
 
+Fortunately,  App Service allows you to deploy code from most common repositories, including TFS, Git, Bitbucket, and GitHub. By configuring App Services to deploy from a repository, you're able to enable Continuous Deployment.
+
+In addition, App Service allows you to access local resources such as MongoDB by using Hybrid Connections. This offers you the flexibility to deploy your applicaiton in stages.
+
+### Overview
+
+In this lab, you will take a Node.js application deployed to GitHub and configure continuous deployment.
+
 In this lab, you'll perform the following tasks:
 
-1. Create a web app in App Services
+1. Create a web app in App Service
 1. Enable Hybrid Connections to connect to MongoDB
 1. Fork the **node-invoicing** application
 1. Configure App Services to pull the code from your repository, and perform the initial deployment
